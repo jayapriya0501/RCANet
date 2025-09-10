@@ -296,22 +296,6 @@ black rcanet/
 flake8 rcanet/
 ```
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- PyTorch team for the excellent deep learning framework
-- Scikit-learn for machine learning utilities
-- The transformer architecture pioneers
-- Open source community for inspiration and tools
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/your-username/RCANet/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/RCANet/discussions)
-- **Email**: your.email@domain.com
 
 ## 🗺️ Roadmap
 
