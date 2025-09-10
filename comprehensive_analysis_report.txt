@@ -1,0 +1,75 @@
+================================================================================
+COMPREHENSIVE RCANET ANALYSIS REPORT
+================================================================================
+
+📊 DATASET SUMMARY
+----------------------------------------
+Dataset: Wine Quality Classification
+Total Samples: 178
+Features: 13
+Classes: 3
+Training Samples: 142
+Test Samples: 36
+
+Class Distribution:
+  class_0: 59 (33.1%)
+  class_1: 71 (39.9%)
+  class_2: 48 (27.0%)
+
+🏆 MODEL PERFORMANCE COMPARISON
+--------------------------------------------------
+Model           Accuracy   F1 (W)     Precision (W) Recall (W) ROC-AUC    Train Time  
+-------------------------------------------------------------------------------------
+RCANet          0.917      0.917      0.931        0.917      0.990      12.04       s
+Random Forest   1.000      1.000      1.000        1.000      1.000      0.12        s
+SVM             0.972      0.972      0.974        0.972      1.000      0.00        s
+MLP             0.972      0.972      0.974        0.972      1.000      0.14        s
+CNN             0.944      0.944      0.947        0.944      0.995      3.53        s
+
+🥇 BEST PERFORMING MODEL: Random Forest
+   Accuracy: 1.000
+   F1 Score (Weighted): 1.000
+
+📊 STATISTICAL SIGNIFICANCE TESTS
+---------------------------------------------
+Random Forest vs SVM: p-value = 0.5000 (✗ Not Significant)
+Random Forest vs MLP: p-value = 1.0000 (✗ Not Significant)
+Random Forest vs RCANet: p-value = 0.0625 (✗ Not Significant)
+SVM vs MLP: p-value = 0.5000 (✗ Not Significant)
+SVM vs RCANet: p-value = 0.0625 (✗ Not Significant)
+MLP vs RCANet: p-value = 0.0625 (✗ Not Significant)
+
+💡 KEY INSIGHTS
+--------------------
+• Found 2 highly correlated feature pairs
+  Top correlation: total_phenols ↔ flavanoids (r = 0.865)
+• Model ranking by accuracy:
+  1. Random Forest: 1.000
+  2. SVM: 0.972
+  3. MLP: 0.972
+  4. CNN: 0.944
+  5. RCANet: 0.917
+• Fastest training: SVM (0.00s)
+• Slowest training: RCANet (12.04s)
+
+🎯 RECOMMENDATIONS
+-------------------------
+• Random Forest performs best on this dataset
+• RCANet shows competitive performance but may benefit from:
+  - Hyperparameter optimization
+  - Longer training
+  - Architecture modifications
+
+• For production deployment, consider:
+  - Model: Random Forest (best accuracy)
+  - Alternative: SVM (fastest training)
+
+🔮 FUTURE WORK
+--------------------
+• Experiment with different RCANet architectures
+• Apply feature selection techniques
+• Test on larger, more complex datasets
+• Implement ensemble methods
+• Explore attention visualization for interpretability
+
+================================================================================
